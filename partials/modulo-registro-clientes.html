@@ -1,0 +1,26 @@
+<h1 class="page-title">Registro de clientes</h1>
+<p class="page-subtitle">Registra empresas que desean consumir nuestra información.</p>
+
+<div class="registro-clientes">
+  <div class="form-container">
+    <form id="form-registro-clientes" class="registro-clientes__form" autocomplete="off">
+      <div class="form-field">
+        <label class="form-field__label" for="registro-cliente-correo">Correo</label>
+        <input type="email" id="registro-cliente-correo" class="form-field__input" name="correo" placeholder="cliente@empresa.com" required>
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="registro-cliente-contrasena">Contraseña</label>
+        <input type="password" id="registro-cliente-contrasena" class="form-field__input" name="contrasena" placeholder="••••••••" required>
+      </div>
+
+      <p id="registro-clientes-mensaje" class="security-message" style="display:none;"></p>
+
+      <div class="registro-clientes__actions">
+        <button type="submit" class="btn btn--primary">Guardar</button>
+        <button type="button" class="btn btn--secondary" id="registro-clientes-ir-control">Ver control de clientes</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/modules/registro-clientes.js"></script>

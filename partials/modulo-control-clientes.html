@@ -1,0 +1,26 @@
+<h1 class="page-title">Control de clientes</h1>
+<p class="page-subtitle">Aquí se muestran las empresas registradas para consumir nuestra información.</p>
+
+<div class="control-clientes">
+  <div class="control-clientes__toolbar">
+    <button type="button" class="btn btn--primary" id="control-clientes-ir-registro">Registrar nuevo cliente</button>
+  </div>
+
+  <p id="control-clientes-empty" class="control-clientes__empty" style="display: none;">
+    No hay clientes registrados. Agrega uno desde <strong>Registro de clientes</strong>.
+  </p>
+
+  <div id="control-clientes-table-wrap" class="control-clientes__table-wrap" style="display: none;">
+    <table class="control-clientes__table" aria-label="Lista de clientes">
+      <thead>
+        <tr>
+          <th>Correo</th>
+          <th>Contraseña</th>
+          <th>Fecha</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="lista-clientes"></tbody>
+    </table>
+  </div>
+</div>
