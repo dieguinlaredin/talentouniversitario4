@@ -1,0 +1,79 @@
+/* ===== Control de clientes ===== */
+
+.control-clientes {
+  width: 100%;
+}
+
+.control-clientes__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.control-clientes__empty {
+  color: var(--color-text-muted);
+  padding: 1.5rem;
+  background: var(--color-input-bg);
+  border-radius: var(--radius-md);
+  margin: 0;
+}
+
+.control-clientes__table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.control-clientes__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.control-clientes__table th,
+.control-clientes__table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.control-clientes__table th {
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-input-bg);
+}
+
+.control-clientes__table th:last-child,
+.control-clientes__table td:last-child {
+  text-align: right;
+}
+
+.control-clientes__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.control-clientes__table tbody tr:hover {
+  background: var(--color-input-bg);
+}
+
+.control-clientes__actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.control-clientes__btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .control-clientes__table th,
+  .control-clientes__table td {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+

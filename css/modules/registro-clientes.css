@@ -1,0 +1,31 @@
+/* ===== Registro de clientes ===== */
+
+.registro-clientes {
+  width: 100%;
+}
+
+.registro-clientes .form-container {
+  max-width: 560px;
+}
+
+.registro-clientes__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* Estados del mensaje (reusa base .security-message) */
+.security-message--ok {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--color-text);
+}
+
+.security-message--error {
+  border-color: rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.08);
+  color: var(--color-text);
+}
+
