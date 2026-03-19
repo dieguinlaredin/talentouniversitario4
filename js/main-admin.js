@@ -10,6 +10,7 @@
     'registro-clientes': 'partials/modulo-registro-clientes.html',
     'control-clientes': 'partials/modulo-control-clientes.html',
     'administracion-carreras': 'partials/modulo-administracion-carreras.html',
+    'control-estudiantes': 'partials/modulo-control-estudiantes.html',
     // 'vista-datos': 'partials/modulo-vista-datos.html'
   };
 
@@ -44,6 +45,9 @@
       }
       if (moduleName === 'control-clientes' && typeof window.initControlClientes === 'function') {
         window.initControlClientes();
+      }
+      if (moduleName === 'control-estudiantes' && typeof window.initControlEstudiantes === 'function') {
+        window.initControlEstudiantes();
       }
       if (moduleName === 'vista-datos' && typeof window.initVistaDatos === 'function') {
         window.initVistaDatos();
